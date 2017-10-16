@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
+    
+    @IBOutlet var table:UITableView!
+    var data:[Libro] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +21,21 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: - Datasource
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:LibroTableViewCell = tableView.dequeueReusableCell(withIdentifier: "celda") as! LibroTableViewCell
+        let libro = data[indexPath.row]
+        cell.name.text = libro.nombre!
+        cell.author.text = libro.autor!
+        cell.pag.text = "Pag. \(libro.paginas!)"
+        return cell
     }
 
 

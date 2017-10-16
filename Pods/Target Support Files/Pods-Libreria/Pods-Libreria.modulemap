@@ -1,0 +1,6 @@
+framework module Pods_Libreria {
+  umbrella header "Pods-Libreria-umbrella.h"
+
+  export *
+  module * { export * }
+}
