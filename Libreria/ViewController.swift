@@ -12,10 +12,19 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet var table:UITableView!
     var data:[Libro] = []
-
+    let client:LibroClient = LibroClient()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        client.getBooks { books in
+            self.data = books
+            self.table.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {

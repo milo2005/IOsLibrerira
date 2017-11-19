@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1B9DF01F9810CC00BE6F7E /* LibroClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1B9DEF1F9810CC00BE6F7E /* LibroClient.swift */; };
 		1B4A3D291F9573A400E2024B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A3D281F9573A400E2024B /* AppDelegate.swift */; };
 		1B4A3D2B1F9573A400E2024B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A3D2A1F9573A400E2024B /* ViewController.swift */; };
 		1B4A3D2E1F9573A400E2024B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4A3D2C1F9573A400E2024B /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		043D59B8B54424F8455DC351 /* Pods-Libreria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Libreria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Libreria/Pods-Libreria.debug.xcconfig"; sourceTree = "<group>"; };
+		1B1B9DEF1F9810CC00BE6F7E /* LibroClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibroClient.swift; sourceTree = "<group>"; };
 		1B4A3D251F9573A400E2024B /* Libreria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Libreria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4A3D281F9573A400E2024B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B4A3D2A1F9573A400E2024B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1B9DEE1F9810AF00BE6F7E /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				1B1B9DEF1F9810CC00BE6F7E /* LibroClient.swift */,
+			);
+			name = Net;
+			sourceTree = "<group>";
+		};
 		1B4A3D1C1F9573A400E2024B = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 		1B4A3D271F9573A400E2024B /* Libreria */ = {
 			isa = PBXGroup;
 			children = (
+				1B1B9DEE1F9810AF00BE6F7E /* Net */,
 				1B4A3D3D1F95770A00E2024B /* Cell */,
 				1B4A3D3A1F95743F00E2024B /* Model */,
 				1B4A3D281F9573A400E2024B /* AppDelegate.swift */,
@@ -239,6 +250,7 @@
 				1B4A3D411F9578FC00E2024B /* AddViewController.swift in Sources */,
 				1B4A3D3C1F95744900E2024B /* Libro.swift in Sources */,
 				1B4A3D2B1F9573A400E2024B /* ViewController.swift in Sources */,
+				1B1B9DF01F9810CC00BE6F7E /* LibroClient.swift in Sources */,
 				1B4A3D3F1F95772200E2024B /* LibroTableViewCell.swift in Sources */,
 				1B4A3D291F9573A400E2024B /* AppDelegate.swift in Sources */,
 			);
@@ -404,6 +416,7 @@
 				1B4A3D391F9573A400E2024B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
